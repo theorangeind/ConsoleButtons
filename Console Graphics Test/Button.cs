@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Console_Graphics_Test
 {
@@ -12,7 +8,12 @@ namespace Console_Graphics_Test
         private String buttonName;
         private int buttonPos;
 
-        public Action buttonAction;
+		public ConsoleColor background = ConsoleColor.DarkGray;
+		public ConsoleColor backgroundActive = ConsoleColor.Blue;
+		public ConsoleColor foreground = ConsoleColor.White;
+		public ConsoleColor foregroundActive = ConsoleColor.White;
+
+		public Action buttonAction;
 
         public Button(String name, Action action)
         {
@@ -20,7 +21,18 @@ namespace Console_Graphics_Test
             this.buttonAction = action;
         }
 
-        public String getName()
+		public Button(String name, Action action, ConsoleColor cb0, ConsoleColor cb1, ConsoleColor cf0, ConsoleColor cf1)
+		{
+			this.buttonName = name.Length <= nameMaxLength ? name : name.Substring(0, (int)nameMaxLength);
+			this.buttonAction = action;
+
+			this.background = cb0;
+			this.backgroundActive = cb1;
+			this.foreground = cf0;
+			this.foregroundActive = cf1;
+		}
+
+		public String getName()
         {
             return this.buttonName;
         }
@@ -32,13 +44,13 @@ namespace Console_Graphics_Test
             Console.Write("\t");
             if (!active)
             {
-                Console.BackgroundColor = ConsoleColor.DarkGray;
-                Console.ForegroundColor = ConsoleColor.White;
+                Console.BackgroundColor = background;
+                Console.ForegroundColor = foreground;
             }
             else
             {
-                Console.BackgroundColor = ConsoleColor.DarkGreen;
-                Console.ForegroundColor = ConsoleColor.White;
+                Console.BackgroundColor = backgroundActive;
+                Console.ForegroundColor = foregroundActive;
             }
 
             int space = (int)(Math.Floor((double)((nameMaxLength - this.buttonName.Length) / 2)));
@@ -59,8 +71,8 @@ namespace Console_Graphics_Test
         {
             Console.Write("\n\t");
             this.buttonPos = Console.CursorTop;
-            Console.BackgroundColor = ConsoleColor.DarkGray;
-            Console.ForegroundColor = ConsoleColor.White;
+            Console.BackgroundColor = background;
+            Console.ForegroundColor = foreground;
             int space = (int)(Math.Floor((double)((nameMaxLength - this.buttonName.Length) / 2)));
             for (int i = 0; i <= space; i++)
             {

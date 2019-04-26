@@ -5,3 +5,10 @@ C:\Users\TheOrangeInd\source\repos\Console Graphics Test\Console Graphics Test\o
 C:\Users\TheOrangeInd\source\repos\Console Graphics Test\Console Graphics Test\obj\Debug\Console Graphics Test.csproj.CoreCompileInputs.cache
 C:\Users\TheOrangeInd\source\repos\Console Graphics Test\Console Graphics Test\obj\Debug\Console Graphics Test.exe
 C:\Users\TheOrangeInd\source\repos\Console Graphics Test\Console Graphics Test\obj\Debug\Console Graphics Test.pdb
+C:\Users\TheOrangeInd\source\repos\ConsoleButtons\Console Graphics Test\bin\Debug\Console Graphics Test.exe.config
+C:\Users\TheOrangeInd\source\repos\ConsoleButtons\Console Graphics Test\bin\Debug\Console Graphics Test.exe
+C:\Users\TheOrangeInd\source\repos\ConsoleButtons\Console Graphics Test\bin\Debug\Console Graphics Test.pdb
+C:\Users\TheOrangeInd\source\repos\ConsoleButtons\Console Graphics Test\obj\Debug\Console Graphics Test.csprojAssemblyReference.cache
+C:\Users\TheOrangeInd\source\repos\ConsoleButtons\Console Graphics Test\obj\Debug\Console Graphics Test.csproj.CoreCompileInputs.cache
+C:\Users\TheOrangeInd\source\repos\ConsoleButtons\Console Graphics Test\obj\Debug\Console Graphics Test.exe
+C:\Users\TheOrangeInd\source\repos\ConsoleButtons\Console Graphics Test\obj\Debug\Console Graphics Test.pdb
